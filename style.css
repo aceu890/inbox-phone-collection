@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-    background-color: #ecf4fb;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 h1::before {
