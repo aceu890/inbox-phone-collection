@@ -98,3 +98,21 @@ h1 span {
     -webkit-box-shadow: 0px 2px 9px 0px #6b6b6b; 
     box-shadow: 0px 2px 9px 0px #6b6b6b;
 }
+
+@media (max-width: 940px) {
+    .header {
+      height: 100px;
+    }
+    .header img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      height: 70px;
+    }
+    .header img {
+      width: 100px;
+    }
+  }
