@@ -6,12 +6,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colecciones Inbox-Phone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilos.css">
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <img src="./imgs/0.webp" alt="">
-    </header>
+<!-- inicio navbar-->
+    <nav class="menu" id="menu">
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+			<button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+		</div>
+
+		<div class="contenedor contenedor-enlaces-nav">
+			<div class="btn-departamentos" id="btn-departamentos">
+				<p>Busca aquí: <span>INDICE</span></p>
+				<i class="fas fa-caret-down"></i>
+			</div>
+
+			<div class="enlaces">
+				<a href="#">Modelos</a>
+				<a href="#">Populares</a>
+				<a href="#">Brillantes</a>
+				<a href="#">Quienes Somos</a>
+			</div>
+		</div>
+
+		<div class="contenedor contenedor-grid">
+			<div class="grid" id="grid">
+				<div class="categorias">
+					<button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="tecnologia-y-computadoras">Marcas<i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="libros">Peliculas <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="ropa-y-accesorios">Música<i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="hogar-y-cocina">Anime<i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="juegos-y-juguetes">Gamer<i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="salud-y-belleza">Futbol<i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="alimentos-y-bebidas">Arte, Animales y Más...<i class="fas fa-angle-right"></i></a>
+				</div>
+
+				<div class="contenedor-subcategorias">
+					<div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Tu Marca:</h3>
+							<a href="#iphone">Iphone</a>
+							<a href="#samsung">Samsung</a>
+							<a href="#xiaomi">Xiaomi</a>
+							<a href="#motorola">Motorola</a>
+							<a href="#vivo">Vivo</a>
+							<a href="#victoria">Victoria Secret</a>
+							<a href="#supreme">Supreme</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/tecnologia-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/tecnologia-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/tecnologia-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/tecnologia-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/tecnologia-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="libros">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Tus Peliculas Favoritas:</h3>
+							<a href="#spiderman">Spider-Man</a>
+							<a href="#starwars">Star Wars</a>
+							<a href="#simpsons">The Simpsons</a>
+							<a href="harley">Harley Quinn</a>
+							<a href="#stitch">Stitch</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/libros-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/libros-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/libros-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/libros-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/libros-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="ropa-y-accesorios">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Tu Grupo Favorito: </h3>
+							<a href="#daftpunk">Daft Punk</a>
+							<a href="#bts">BTS</a>
+							<a href="#rock">Clasicos del Rock</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/ropa-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/ropa-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/ropa-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/ropa-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/ropa-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="hogar-y-cocina">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Anime:</h3>
+							<a href="#dragon">Dragon Ball Z</a>
+							<a href="#dunk">Slam Dunk</a>
+							<a href="#tokyo">Tokyo Ghoul</a>
+							<a href="#hunter">Hunter X</a>
+							<a href="#titan">Attack on Titan</a>
+							<a href="#note">Death Note</a>
+							<a href="#bleach">BLEACH</a>
+							<a href="#fullmetal">Full Metal Alchemist</a>
+							<a href="#pokemon">Pokémon</a>
+							<a href="#samuraix">Samurai X</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/hogar-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/hogar-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/hogar-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/hogar-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/hogar-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="juegos-y-juguetes">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Tus Juegos Favoritos:</h3>
+							<a href="#">League of Legends</a>
+							<a href="#">MineCraft</a>
+							<a href="#">Super Mario</a>
+							<a href="#">Gamer Girl</a>
+							<a href="#">Fortnite</a>
+							<a href="#">Mortal Kombat</a>
+							<a href="#">Crash Bandicot</a>
+							<a href="#">Ver Todos...</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/juegos-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/juegos-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="salud-y-belleza">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Tu Equipo Favorito: </h3>
+							<a href="#">Liga Chilena</a>
+							<a href="#">Liga Internacional</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/belleza-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/belleza-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/belleza-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/belleza-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/belleza-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="alimentos-y-bebidas">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Diseños Especiales: </h3>
+							<a href="#">Diseños Abstractos</a>
+							<a href="#">Animal Print</a>
+							<a href="#">NEON</a>
+							<a href="#">Vintage</a>
+							<a href="#">Texturas</a>
+							<a href="#">Artisticos</a>
+							<a href="#">Super Glitch</a>
+							<a href="#">Florales</a>
+							<a href="#">WaveColors</a>
+							<a href="#">Ver Todos...</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/comida-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/comida-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/comida-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/comida-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/comida-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- <main class="contenedor">
+		<article></article>
+	</main> -->
+<!-- fin navbar----->
+
+
     <div class="ful-img" id="fullImgBox">
         <img src="./imgs/1.jpg" id="fulImg" alt="">
         <span onclick="closeImg()">X</span>
@@ -24,46 +310,46 @@
         <img loading="lazy" src="./imgs/2.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/3.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/4.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/5.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="starwars" loading="lazy" src="./imgs/5.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/6.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/7.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/8.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/9.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="daftpunk" loading="lazy" src="./imgs/8.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="spiderman" loading="lazy" src="./imgs/9.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/10.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/11.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/12.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="secret" loading="lazy" src="./imgs/11.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="supreme" loading="lazy" src="./imgs/12.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/13.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/14.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/15.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/16.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/17.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="simpsons" loading="lazy" src="./imgs/16.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="harley" loading="lazy" src="./imgs/17.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/18.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/19.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/20.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/21.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="stitch" loading="lazy" src="./imgs/21.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/22.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/23.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/24.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/25.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/26.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/27.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/28.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="bts" loading="lazy" src="./imgs/28.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/29.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/30.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/31.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/32.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/33.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="iphone" loading="lazy" src="./imgs/33.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/34.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/35.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/36.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="samsung" loading="lazy" src="./imgs/36.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/37.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/38.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="huawei" loading="lazy" src="./imgs/38.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/39.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/40.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="vivo" loading="lazy" src="./imgs/40.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/41.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/42.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="motorola" loading="lazy" src="./imgs/42.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/43.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/44.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="xiaomi" loading="lazy" src="./imgs/44.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/45.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/46.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/47.webp" onclick="openFullImg(this.src)" alt="">
@@ -78,32 +364,34 @@
         <img loading="lazy" src="./imgs/56.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/57.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/58.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/59.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="dragon" loading="lazy" src="./imgs/59.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/60.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/61.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="dunk" loading="lazy" src="./imgs/61.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/62.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/63.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/64.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="tokyo" loading="lazy" src="./imgs/64.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/65.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/66.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/67.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/68.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/69.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/70.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="titan" loading="lazy" src="./imgs/67.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="hunter" loading="lazy" src="./imgs/68.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="note" loading="lazy" src="./imgs/69.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="bleach" loading="lazy" src="./imgs/70.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/71.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/72.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/73.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="fullmetal" loading="lazy" src="./imgs/73.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/74.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/75.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/76.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/77.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="samuraix" loading="lazy" src="./imgs/76.webp" onclick="openFullImg(this.src)" alt="">
+        <img id="pokemon" loading="lazy" src="./imgs/77.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/78.webp" onclick="openFullImg(this.src)" alt="">
         <img loading="lazy" src="./imgs/79.webp" onclick="openFullImg(this.src)" alt="">
-        <img loading="lazy" src="./imgs/80.webp" onclick="openFullImg(this.src)" alt=""> 
+        <img id="rock" loading="lazy" src="./imgs/80.webp" onclick="openFullImg(this.src)" alt=""> 
         <img loading="lazy" src="./imgs/81.webp" onclick="openFullImg(this.src)" alt=""> 
     </div>
 
 
+    <script src="./main.js"></script>
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
 </html>
