@@ -42,7 +42,7 @@ h1 span {
 .img-gallery img{
     width: 100%;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
 }
 
 .img-gallery img:hover {
