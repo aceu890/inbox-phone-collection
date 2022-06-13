@@ -1,3 +1,16 @@
+const fullImgBox = document.getElementById("fullImgBox")
+fulImg = document.getElementById("fulImg")
+
+function openFullImg(reference) {
+    fullImgBox.style.display = "flex"
+    fulImg.src = reference
+}
+
+function closeImg() {
+    fullImgBox.style.display = "none";
+}
+
+
 const btnDepartamentos = document.getElementById('btn-departamentos'),
 	  btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
 	  grid = document.getElementById('grid'),
