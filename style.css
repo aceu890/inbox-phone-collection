@@ -10,6 +10,10 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+a{
+	color: #fff;
+}
+
 
 h1 {
     text-align: center;
@@ -33,6 +37,14 @@ h1 span {
     background-color: #ecf4fb;
     padding: 0 15px;
 }
+
+figure {
+	text-align: center;
+	font-weight: bold;
+	background-color: #37758b;
+	color: white;
+}
+
 .img-gallery {
     width: 80%;
     margin: 50px auto 50px;
@@ -43,13 +55,13 @@ h1 span {
 }
 
 .img-gallery img{
-    width: 100%;
+	width: 100%;
     cursor: pointer;
     transition: .5s;
 }
 
 .img-gallery img:hover {
-    transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .ful-img {
@@ -197,7 +209,8 @@ main article {
 }
 
 .menu .contenedor-enlaces-nav .enlaces a:hover {
-	border: 1px solid rgba(255,255,255,.4);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	color: #fff;
 }
 
 /* ------------------------- */
