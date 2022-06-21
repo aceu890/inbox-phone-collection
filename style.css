@@ -41,8 +41,9 @@ h1 span {
 figure {
 	text-align: center;
 	font-weight: bold;
-	background-color: #37758b;
+	background-color: #1182e4;
 	color: white;
+	padding-bottom: 10px;
 }
 
 .img-gallery {
